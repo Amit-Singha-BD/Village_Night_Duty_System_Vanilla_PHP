@@ -1,0 +1,72 @@
+.user_style{
+    background-image: url('../../background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Navbar style */
+
+
+
+/* login form css */
+
+.full_body{
+    background-color: black;
+}
+.card_css{
+    background-color: rgba(236, 232, 213, 0.4);
+    border-radius: 20px
+}
+.label_css{
+    color: #ffff;
+    font-size: 18px;
+}
+.log-input{
+    border: 2px solid orangered;
+    border-radius: 20px;
+}
+.log-button{
+    background-color: #7D0552;
+    color: white;
+    padding: 8px 25px;
+    border: 2px solid #7D0552;
+    border-radius: 25px;
+}
+.log-button:hover{
+    background-color: #2B1B17;
+    border: 2px solid #7D0552;;
+}
+
+/* Custom styling for sidebar */
+.admin_body{
+    display: flex;
+}
+.sidebar{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #512e5f;
+    padding-top: 20px;
+    color: white;
+}
+.sidebar a{
+    color: white;
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+.sidebar a:hover{
+    background-color: #495057;
+}
+.content{
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
