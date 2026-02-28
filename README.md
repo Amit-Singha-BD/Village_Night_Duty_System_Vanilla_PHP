@@ -73,31 +73,37 @@ Night_Duty_System/
 - Bootstrap
 
 ## Setup Instructions
-- Follow these steps to run the project locally:
+- Follow these 5 simple steps to run the project locally:
 
+## Step 1
 ### Clone the Repository
 ```bash
 git clone https://github.com/Amit-Singha-BD/Village_Night_Duty_System_Vanilla_PHP.git
 ```
 
+## Step 2
 ### Move Project Folder
-- Move the project folder to:
+- Run the project on your local server, or if using XAMPP, move the project folder to:
 ```
 xampp/htdocs/
 ```
 
+## Step 3
 ### Create Database
-- Create a new database named:
+- Open phpMyAdmin, click New, enter the database name:
 ```
 night_gourd
 ```
+and then click Create.
 
+## Step 4
 ### Import SQL File
 - Import the provided SQL file:
 ```
 night_gourd.sql
 ```
 
+## Step 5
 ### Run the Project
 - Open your browser and visit:
 ```
