@@ -10,7 +10,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="btn btn-light" href="#">Log Out</a>
+                            <a class="btn btn-light" href="Logout.php">Log Out</a>
                         </li>
                     </ul>
                 </div>

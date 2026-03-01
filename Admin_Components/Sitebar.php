@@ -5,6 +5,5 @@
         <a href="New_Member_Create.php">New Member Create</a>
         <a href="Member_List.php">Member List</a>
         <a href="Startdate.php">Start Date</a>
-        <a href="">Settings</a>
-        <a href="#logout">Log Out</a>
+        <a href="Logout.php">Log Out</a>
     </div>
