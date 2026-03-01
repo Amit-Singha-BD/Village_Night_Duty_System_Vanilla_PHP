@@ -105,12 +105,12 @@ if (isset($_SESSION['date_set']) && $unfinished_count == 0) {
                 <h2 class="text-center text-light fw-bold">Pahara Start Date</h2>
 
                 <!-- Display error message if any -->
-                <?php if (!empty($error)): ?>
+                <?php if(!empty($error)): ?>
                     <div class="alert alert-danger"><?php echo $error; ?></div>
                 <?php endif; ?>
 
                 <!-- Display success message if any -->
-                <?php if (!empty($success)): ?>
+                <?php if(!empty($success)): ?>
                     <div class="alert alert-success"><?php echo $success; ?></div>
                 <?php endif; ?>
 

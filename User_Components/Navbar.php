@@ -19,10 +19,6 @@
             <a class="nav-link text-white fw-bold" href="About.php">About</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light" type="submit">Search</button>
-        </form>
         <div class="mx-3 my-3">
           <a class="btn btn-light fw-bold" href="Login.php">Log In</a>
         </div>
