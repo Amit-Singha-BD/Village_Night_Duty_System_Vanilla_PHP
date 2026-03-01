@@ -20,12 +20,12 @@ $user_result = mysqli_query($conn, $user_sql);
 $total_users = mysqli_fetch_assoc($user_result)['total_users'];
 ?>
 
-<div class="container mt-5 pt-5">
-    <h2 class="text-center text-light mb-5">Dashboard Overview</h2>
+<div class="container mt-2">
+    <h2 class="text-center text-dark mb-3">Dashboard Overview</h2>
     <div class="row justify-content-center">
 
         <!-- Total Members -->
-        <div class="col-md-3 mb-4">
+        <div class="col-md-4 mb-4">
             <div class="card text-center text-light" style="background-color: #512e5f;">
                 <div class="card-body">
                     <h5 class="card-title">Total Members</h5>
@@ -35,7 +35,7 @@ $total_users = mysqli_fetch_assoc($user_result)['total_users'];
         </div>
 
         <!-- Total Groups -->
-        <div class="col-md-3 mb-4">
+        <div class="col-md-4 mb-4">
             <div class="card text-center text-light" style="background-color: #2a3f54;">
                 <div class="card-body">
                     <h5 class="card-title">Total Groups</h5>
@@ -45,7 +45,7 @@ $total_users = mysqli_fetch_assoc($user_result)['total_users'];
         </div>
 
         <!-- Total Admin/Users -->
-        <div class="col-md-3 mb-4">
+        <div class="col-md-4 mb-4">
             <div class="card text-center text-light" style="background-color: #1abc9c;">
                 <div class="card-body">
                     <h5 class="card-title">Total Users</h5>

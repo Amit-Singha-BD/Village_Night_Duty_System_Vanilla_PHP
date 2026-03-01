@@ -33,8 +33,8 @@ if (!empty($group_members)) {
 
 ?>
 
-<div class="container mt-5 pt-5">
-    <h2 class="text-center text-light mb-4">Today's Group</h2>
+<div class="container mt-2">
+    <h2 class="text-center text-dark mb-3">Today's Group</h2>
 
     <table class="table table-bordered table-striped text-center">
         <thead class="table-dark">

@@ -5,15 +5,15 @@ require "Database.php";
 ?>
 
 <div class="container my-5 py-4">
-    <h2 class="text-center my-4 text-light fw-bold">List of Names</h2>
+    <h2 class="text-center my-4 text-light fw-bold">Paharadar List</h2>
     <table class="table table-striped table-bordered">
         <thead class="table-dark">
-            <tr>
-                <th scope="col" class="text-center">SR</th>
-                <th scope="col" class="text-center">Name</th>
-                <th scope="col" class="text-center">Father's Name</th>
-                <th scope="col" class="text-center">Phone Number</th>
-                <th scope="col" class="text-center" style="width: 250px;">Option</th>
+            <tr class="text-center">
+                <th scope="col">SR</th>
+                <th scope="col">Name</th>
+                <th scope="col">Father's Name</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col" style="width: 250px;">Option</th>
             </tr>
         </thead>
         <tbody>
@@ -24,12 +24,12 @@ require "Database.php";
 
             if ($result && mysqli_num_rows($result) > 0) {
                 while ($member = mysqli_fetch_assoc($result)) {
-                    echo "<tr>
-                            <td class='text-light text-center'>" . htmlspecialchars($member['id']) . "</td>
-                            <td class='text-light text-center'>" . htmlspecialchars($member['name']) . "</td>
-                            <td class='text-light text-center'>" . htmlspecialchars($member['father_name']) . "</td>
-                            <td class='text-light text-center'>" . htmlspecialchars($member['phone']) . "</td>
-                            <td class='text-center'>
+                    echo "<tr class='text-light text-center'>
+                            <td>" . htmlspecialchars($member['id']) . "</td>
+                            <td>" . htmlspecialchars($member['name']) . "</td>
+                            <td>" . htmlspecialchars($member['father_name']) . "</td>
+                            <td>" . htmlspecialchars($member['phone']) . "</td>
+                            <td>
                                 <a href='View.php?id=" . urlencode($member['id']) . "' target='_blank' class='btn btn-success'>View</a>
                             </td>
                           </tr>";

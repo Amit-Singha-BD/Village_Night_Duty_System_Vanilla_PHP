@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #512e5f;">
-    <div class="container-fluid">
+    <div class="container">
       <a class="navbar-brand text-white fw-bold" href="index.php">NG</a>
       <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon bg-dark"></span>

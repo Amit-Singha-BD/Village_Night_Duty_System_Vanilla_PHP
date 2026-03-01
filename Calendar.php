@@ -61,15 +61,19 @@ $conn->close();
 ?>
 
 <div class="container mt-5 pt-5">
-    <h2 class="text-center text-light fw-bold">Village Groups Calendar</h2>
-    <div class="card mx-auto my-4" style="width: 80rem;">
+    <h2 class="text-center text-light fw-bold">Paharadar Groups</h2>
+    <div class="card bg-transparent mx-auto my-4" style="width: auto;">
         <div class="card-body">
 
             <?php foreach ($groups as $group): ?>
-                <table class="table mb-5 table-bordered">
-                    <h4 class="text-primary">Group ID: <?php echo $group['group_id']; ?> | Date: <?php echo date('d/m/Y', strtotime($group['date'])); ?> | Day: <?php echo $group['day']; ?></h4>
+                <table class="table table-striped table-bordered mb-5">
+                    <div class="d-flex justify-content-between">
+                        <h4 class="text-light fs-5">Group ID: <?php echo $group['group_id']; ?></h4>
+                        <h4 class="text-light fs-5">Day: <?php echo $group['day']; ?></h4>
+                        <h4 class="text-light fs-5">Date: <?php echo date('d/m/Y', strtotime($group['date'])); ?></h4>
+                    </div>
                     <thead class="table-dark">
-                        <tr>
+                        <tr class="text-center text-light">
                             <th>SR</th>
                             <th>Name</th>
                             <th>Father Name</th>
@@ -80,7 +84,7 @@ $conn->close();
                         <?php $sr = 1; ?>
                         <?php foreach ($group['members'] as $member_id): ?>
                             <?php if (isset($members_data[$member_id])): ?>
-                                <tr>
+                                <tr class="text-center text-light">
                                     <td><?php echo $sr++; ?></td>
                                     <td><?php echo htmlspecialchars($members_data[$member_id]['name']); ?></td>
                                     <td><?php echo htmlspecialchars($members_data[$member_id]['father_name']); ?></td>

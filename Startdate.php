@@ -114,7 +114,6 @@ if (isset($_SESSION['date_set']) && $unfinished_count == 0) {
                     <div class="alert alert-success"><?php echo $success; ?></div>
                 <?php endif; ?>
 
-                <!-- Start Date Form -->
                 <form action="Startdate.php" method="POST">
                     <div class="mt-5">
                         <label for="exampleInputText1" class="form-label text-light">Date</label>

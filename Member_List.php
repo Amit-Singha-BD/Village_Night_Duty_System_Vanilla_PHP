@@ -10,9 +10,9 @@ $memberList = mysqli_fetch_all($result, MYSQLI_ASSOC);
 ?>
 
 <!-- Main Content -->
-<div class="container mt-4">
+<div class="container mt-2">
     <div class="container">
-        <h2 class="text-center mb-4 fw-bold">List of Members</h2>
+        <h2 class="text-center mb-3 fw-bold">List of Members</h2>
         <table class="table table-striped table-bordered">
             <thead class="table-dark">
                 <tr>
@@ -20,7 +20,7 @@ $memberList = mysqli_fetch_all($result, MYSQLI_ASSOC);
                     <th scope="col" class="text-center">Name</th>
                     <th scope="col" class="text-center">Father's Name</th>
                     <th scope="col" class="text-center">Phone Number</th>
-                    <th scope="col" class="text-center" style="width: 250px;">Customize</th>
+                    <th scope="col" class="text-center" style="width: 250px;">Action</th>
                 </tr>
             </thead>
             <tbody>
