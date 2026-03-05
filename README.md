@@ -1,30 +1,61 @@
 # Village_Night_Duty_System_Vanilla_PHP
 
 ## Description
-Night Duty System is a simple web application built using Vanilla PHP for practice purposes after learning core PHP.
+Village Night Duty System is a simple web application built using Vanilla PHP for practice after learning core PHP.
 
-This project is designed for managing village night duty schedules. It helps distribute night guard responsibilities among villagers and allows users to check who is assigned on a specific date. In case of any emergency, villagers can easily find and contact the assigned night guards.
+This project simulates a village night guard management system, where villagers are organized into groups to perform night duty (পাহাড়া). The system helps villagers easily check who is responsible for night duty on a specific day.
 
-The project was mainly developed to strengthen my PHP fundamentals through real-world practice.
+The website provides public pages where village members can view the duty schedule, while an admin panel allows administrators to manage members, create schedules, and monitor attendance.
+
+This project was developed mainly to strengthen PHP fundamentals, CRUD operations, and real-world logic implementation.
 
 ## Features
 
-### Frontend
-- Home Page – Displays today's night duty members in a table.
-- Night Guard List – Shows the complete list of village members in table format.
-- Calendar Page – Displays the monthly night duty schedule.
-- About Page – Provides information about the website.
+### Frontend (Public Website)
+#### Home Page
+- Displays today’s night duty group members in a table format.
+
+#### List of Paharadar
+- Shows the complete list of village members who participate in night duty.
+
+#### Calendar Page
+- Displays the monthly night duty schedule.
+- Members are divided into groups (e.g., 6 members per group).
+- Each group is displayed in a table format grouped by duty schedule.
+
+#### About Page
+- Provides information about the system and its purpose.
 
 ### Backend (Admin Panel)
-- Dashboard – Admin dashboard (currently basic structure).
-- Create Member – Add new village members.
-- Member List – View all members with options to:
- - View
- - Edit
- - Delete
-- Start Date Setup – Set the starting date for night duty scheduling.
-- Settings Page
-- Logout Page
+#### Dashboard
+- Displays system statistics such as:
+- Total Members
+- Total Groups
+- Total Admin Users
+
+#### Create Member
+- Add new village members who will participate in night duty.
+
+#### Member List
+- View all members in a table.
+- Available actions:
+- View
+- Edit
+- Delete
+
+#### Group Page
+- Shows today’s duty group.
+- Admin can control attendance using:
+- Present
+- Absent
+
+#### Start Date Setup
+- Admin sets the starting date for the duty schedule.
+- Groups are automatically generated based on this date.
+- If the existing 30-group schedule is not finished, a new schedule cannot be created.
+
+#### Logout
+- Secure logout for admin users.
 
 ## Project Structure
 ```
@@ -46,22 +77,24 @@ Night_Duty_System/
 │   └── Bootstrap Files
 │
 ├── SQL_File/
-│   ├── night_gourd.sql
-|
+│   └── night_gourd.sql
+│
 ├── index.php
 ├── calendar.php
 ├── night_guard_list.php
 ├── about.php
+│
 ├── dashboard.php
 ├── create_member.php
 ├── member_list.php
 ├── view.php
 ├── edit.php
 ├── delete.php
+├── group.php
 ├── start_date.php
-├── settings.php
 ├── logout.php
 ├── login.php
+│
 └── Database.php
 ```
 
@@ -98,9 +131,13 @@ and then click Create.
 
 ### Step 4
 #### Import SQL File
-- Import the provided SQL file:
+- Import the database file:
 ```
 night_gourd.sql
+```
+- You can find it inside:
+```
+SQL_File/
 ```
 
 ### Step 5
@@ -111,10 +148,12 @@ http://localhost/Village_Night_Duty_System_Vanilla_PHP
 ```
 
 ## Purpose of the Project
-- Practice core PHP
+This project was developed to:
+- Practice Core PHP
 - Understand CRUD operations
-- Work with MySQL database
-- Build real-world logic using dates and scheduling
+- Work with MySQL databases
+- Implement date-based scheduling logic
+- Build a real-world system using PHP
 - Improve backend development skills
 
 ## Author
